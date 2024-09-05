@@ -710,8 +710,8 @@ async def start(client, message):
         return await send_to_chat(message=message, text=f"Token refreshed successfully", buttons=None, reply=True, photo=True)
     else:
         buttons = ButtonMaker()
-        buttons.ubutton("Repo", "https://github.com/SN-Abdullah-Al-Noman/Atrocious_Mirror")
-        buttons.ubutton("Owner", "https://t.me/AtrociousMirrorBackup")
+        buttons.ubutton("JOIN", "https://t.me/+xItYyMB4-ZBjMTc1")
+        buttons.ubutton("Owner", "https://t.me/RD_C4")
         reply_markup = buttons.build_menu(2)
         start_string = f'''This bot can mirror all your links|files|torrents to Google Drive or any rclone cloud or to telegram.\nType /{BotCommands.HelpCommand} to get a list of available commands'''
         await send_to_chat(message=message, text=start_string, buttons=reply_markup, reply=True, photo=True)
